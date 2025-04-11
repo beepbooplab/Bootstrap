@@ -1,0 +1,95 @@
+/* Apply Times New Roman to specific pages */
+.index-page {
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Custom styles that cannot be directly replaced by Bootstrap */
+.horse {
+    color: #CABA9C; /* Contrasting white text */
+    font-size: 40px;
+    font-family: fantasy;
+}
+.horse:hover {
+    animation: colorThemeChange 2s forwards;
+}
+@keyframes colorThemeChange {
+    0% {
+        color: #CABA9C; /* Start with light beige */
+    }
+    100% {
+        color: #324c47; /* Transition to greenish */
+    }
+}
+/* Custom styles for the background colors */
+.bg-dark-brown {
+    background-color: #331f15;
+}
+.bg-greenish {
+    background-color: #324c47;
+}
+.bg-muted-brown {
+    background-color: #5c464b;
+}
+.text-white {
+    color: white;
+}
+/* General body styling */
+body {
+    background-color: #E8EAE6; /* Light beige background */
+    color: #4d2d18; /* Dark brown text */
+    font-family: 'Times New Roman', Times, serif; /* Default font */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #102820; /* Dark green */
+    color: #CABA9C; /* Contrasting white text */
+}
+
+.navbar-brand, .nav-link {
+    color: #CABA9C !important; /* Contrasting white text */
+}
+
+.nav-link:hover {
+    color: #8a6240 !important; /* Light brown */
+}
+
+/* Header styling */
+header {
+    background-color: #4d2d18; /* Dark brown */
+    color: #CABA9C; /* Contrasting white text */
+    border-radius: 8px;
+}
+
+/* Table styling */
+.table-dark {
+    background-color: #4d2d18; /* Dark brown */
+    color: #CABA9C; /* Contrasting white text */
+}
+
+.table-bordered th, .table-bordered td {
+    border-color: #102820; /* Dark green */
+}
+
+/* List item styling */
+h2 {
+    background-color: #102820; /* Dark green */
+    color: #CABA9C; /* Contrasting white text */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: #8a6240; /* Light brown */
+}
+
+a:hover {
+    color: #102820; /* Dark green */
+}
+/* Ensure all images on the index page have the same aspect ratio */
+.index-page img {
+    aspect-ratio: 16 / 9; /* Set a consistent aspect ratio (e.g., 16:9) */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain proportional scaling */
+    max-height: 300px; /* Optional: Limit the maximum height */
+}
